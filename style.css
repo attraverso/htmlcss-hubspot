@@ -398,9 +398,20 @@ nav li a {
     float: right;
 }
 
+.recs-logos .gridbox {
+    position: relative;
+    padding: 50px 0  30px;
+}
+
+.recs-logos .imgwrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .recs-logos img {
     width: 110px;
-    padding: 20px 0;
 }
 
 .recs-textbox h3 {
