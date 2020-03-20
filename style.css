@@ -87,6 +87,18 @@ p {
     display: table;
 }
 
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 .floatlx {
     float: left;
 }
@@ -260,6 +272,10 @@ nav li a {
 
 .featurebox h2 {
     padding-bottom: 20px;
+}
+
+.featurebox.tallicon {
+    padding-bottom: 16px; /* Central icon is 4px taller */
 }
 
 .featurebox p {
@@ -475,6 +491,10 @@ footer i {
     padding: 0 10px;
 }
 
+footer i:first-child {
+    padding-left: 0;
+}
+
 footer p {
     color: #cbd6e2;
     font-size: 14px;
@@ -490,6 +510,14 @@ footer .btn {
     background-color: #fff;
     color: #33475b;
     border-color: #33475b;
+}
+
+.footer-toprow .dropdown-content {
+    background-color: #33475b;
+    color: #cbd6e2;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 0;
 }
 
 .footer-middlerow {
