@@ -95,6 +95,10 @@ p {
     display: none;
 }
 
+.dropdown:hover .dropdown-content, .dropdown:hover .dropdown-topmenu-content {
+    display: block;
+}
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -104,9 +108,11 @@ p {
 }
 
 .greyarrow::after {
-    content:"\25bc";
+    content:"\f0d7";
     color: #7c98b6;
-    font-size: 14px;
+    font-family: "Font Awesome 5 Pro";
+    font-size: 18px;
+    font-weight: 600;
     padding-left: 10px;
 }
 
@@ -179,12 +185,12 @@ p {
 /* header - bottom section - left*/
 
 #header-bottom {
-    height: 11.5vh;
+    /* height: 84px; */
     margin-top: 84px;
 }
 
 #mainlogobox {
-    margin-top: 25px;
+    padding: 25px 0;
 }
 
 /* header - bottom section - right*/
@@ -203,6 +209,37 @@ nav li a {
     padding: 0 20px;
     font-size: 17px;
     font-weight: 600;
+}
+
+.dropdown-topmenu-content {
+    width: 895px;
+    padding: 0 30px;
+    background-color: #fff;
+    border: 1px solid #CBD6E2;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: -250px;
+}
+
+.dropcontent-row:not(last-child) {
+    border-bottom: 1px solid #cbd6e2;
+}
+
+.menubox {
+    padding: 30px 12px;
+}
+
+.menubox-title {
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.menubox-text {
+    font-size: 13px;
+    line-height: 20px;
 }
 
 /* MAIN SECTION */
@@ -274,8 +311,8 @@ nav li a {
     padding-bottom: 20px;
 }
 
-.featurebox.tallicon {
-    padding-bottom: 16px; /* Central icon is 4px taller */
+.featurebox.tallicon h2{
+    padding-bottom: 16px;
 }
 
 .featurebox p {
@@ -415,8 +452,9 @@ nav li a {
 }
 
 .recs-logos .gridbox {
+    width: 135px;
+    height: 90px;
     position: relative;
-    padding: 50px 0  30px;
 }
 
 .recs-logos .imgwrap {
